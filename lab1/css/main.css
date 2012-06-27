@@ -1,0 +1,119 @@
+/*---------- Reset ----------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------- Basic Elements ----------*/
+
+h2 {
+	font-size: 22px;
+	color: #526663;
+}
+
+/*---------- Structure ----------*/
+
+body {
+	font: 62.5%/1.5 helvetica, arial, sans-serif;
+}
+
+header {
+	background: #C5B287;
+}
+
+#header_wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav ul {
+	overflow: hidden;
+	font-size: 16px;
+}
+
+nav li {
+	float: left;
+	background: #7D9C97;
+}
+
+nav a {
+	text-decoration: none;
+	color: #241512;
+	padding: 5px 12px;
+}
+
+nav a:hover {
+	background: #526663;
+	color: #ebe9dc;
+}
+
+nav a.current {
+	background: #526663;
+	color: #ebe9dc;
+}
+
+#main_content {
+	background: url('../images/skin_side_up.png');
+	font-size: 14px;
+	overflow: hidden;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+section {
+	width: 600px;
+	padding: 10px 20px;
+	float: left;
+}
+
+aside {
+	float: left;
+	width: 280px;
+	padding: 10px 20px;
+}
+
+footer {
+	clear: left;
+	background: #C5B287;
+	min-height: 25px;
+	line-height: 25px;
+}
+
+#footer_wrapper {
+	width: 960px;
+	text-align: center;
+	margin: 0 auto;
+}

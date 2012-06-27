@@ -1,0 +1,123 @@
+/*---------- Reset ----------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------- Basic Elements ----------*/
+
+h2 {
+	color: #43627a;
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 18px;
+	margin-top: 15px;
+	color: #3a3a3a;
+}
+
+div ul {
+	list-style: disc;
+	list-style-position: inside;
+	margin-left: 5px;
+}
+
+li {
+	margin: 6px 0;
+}
+
+li span {
+	color: #333;
+	font-weight: bold;
+}
+
+p, ul, table {
+	margin: 8px 0;
+}
+
+tr, th, td {
+	border: 2px solid #6099CE;
+}
+
+th {
+	font-weight: bold;
+}
+
+th, td {
+	padding: 4px 10px;
+}
+
+
+/*---------- Structure ----------*/
+
+body {
+	background: #fff;
+	font: 62.5%/1.5 arial, helvetica, sans-serif;
+	color: #5b5b5b;
+}
+
+#wrapper {
+	width: 860px;
+	border: 20px solid #6099ce;
+	min-height: 600px;
+	margin: 10px auto;
+	background: #f5f8fb;
+	padding: 30px;
+	font-size: 14px;
+}
+
+#wrapper div {
+	padding: 20px 0;
+	border-bottom: 1px solid #6099ce;
+}
+
+#wrapper div:first-child, #header p {
+	padding-top: 0;
+}
+
+#wrapper div:last-child {
+	border: none;
+	padding-bottom: 0;
+}
+
+#header p {
+	font-size: 18px;
+	margin: 0;
+}
+
+#header strong {
+	margin-right: 10px;
+	color: #43627a;
+	font-size: 20px;
+}
