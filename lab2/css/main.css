@@ -1,0 +1,275 @@
+/*---------- Reset ----------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------- Basic Elements ----------*/
+
+h1 {
+	font-size: 22px;
+	color: #526663;
+}
+
+p {
+	margin: 8px 0;
+}
+
+/*---------- Structure ----------*/
+
+body {
+	font: 62.5%/1.5 helvetica, arial, sans-serif;
+}
+
+header {
+	background: #C5B287;
+}
+
+#header_wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav ul {
+	overflow: hidden;
+	font-size: 16px;
+}
+
+nav li {
+	float: left;
+	background: #7D9C97;
+}
+
+nav a {
+	text-decoration: none;
+	color: #241512;
+	padding: 5px 12px;
+}
+
+nav a:hover {
+	background: #526663;
+	color: #ebe9dc;
+}
+
+nav a.current {
+	background: #526663;
+	color: #ebe9dc;
+}
+
+#main_content {
+	background: url('../images/skin_side_up.png');
+	font-size: 14px;
+	overflow: hidden;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+section {
+	width: 600px;
+	padding: 10px 20px;
+	float: left;
+}
+
+section img {
+	float: left;
+	margin: 10px 15px 10px 0;
+}
+
+/*---------- Form Design ----------*/
+
+form {
+	font-size: 1.4em;
+}
+
+label, input, textarea {
+	display: block;
+}
+
+input, textarea {
+	margin: 3px 0 10px;
+}
+
+textarea {
+	width: 318px;
+	height: 70px;
+}
+
+input[type="text"] {
+	width: 313px;
+	height: 20px;
+	border-width: 1px;
+	padding-left: 5px;
+}
+
+label, legend {
+	font: 16px 'Pontano Sans', sans-serif;
+}
+
+label span {
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+input[type="radio"] {
+	margin-right: 10px;
+	float: left;
+	clear: left;
+}
+
+#subject label {
+	font-size: 0.7em;
+	color: #333;
+	height: 20px;
+	line-height: 20px;'
+}
+
+#name label, #email label {
+	float: left;
+	width: 70px;
+}
+
+#name input {
+	width: 175px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 0;s
+}
+
+#name span {
+	font-size: 12px;
+	float: left;
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+.first_name {
+	margin-left: 70px;
+	clear: left;
+}
+
+.last_name {
+	margin-left: 92px;
+}
+
+#email {
+	margin-bottom: 20px;
+}
+
+#email label {
+	clear: left;
+}
+
+#email input {
+	float: left;
+	width: 250px;
+}
+
+fieldset[id="subject"] {
+	clear: left;
+}
+
+#professional_radio {
+	margin-top: 5px;
+}
+
+div > label {
+	margin-top: 10px;
+}
+
+/*----- Birth Date -----*/
+
+#section-dob div {
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+
+select {
+	margin: 3px 0 5px;
+}
+
+select option:first-child {
+	font-weight: bold;
+}
+
+#section-dob em {
+	clear: left;
+	font-size: 0.8em;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/*----- CTA Button -----*/
+
+.controls {
+	margin-top: 15px;
+}
+
+input[type="submit"] {
+	width: 100px;
+	padding: 5px 20px;
+	font-weight: bold;
+	font-size: 16px;
+	background: #3A4856;
+	color: #F3F3F3;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: #468fd7;
+	cursor: pointer;
+}
+
+aside {
+	float: left;
+	width: 280px;
+	padding: 10px 20px;
+}
+
+footer {
+	clear: left;
+	background: #C5B287;
+	min-height: 25px;
+	line-height: 25px;
+}
+
+#footer_wrapper {
+	width: 960px;
+	text-align: center;
+	margin: 0 auto;
+}
