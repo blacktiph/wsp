@@ -160,10 +160,16 @@ nav a:active {
 /*---------- Main Content ----------*/
 
 #main_content {
-	background: #f2f7f7;
+	background: url('../images/net.png');
 	border-top: 1px solid #cccccc;
 	font-size: 14px;
+	overflow:hidden;
 }
+
+/*#main_content > .wrapper {
+	background: #F8F8F8;
+	overflow: hidden;
+}*/
 
 section {
 	float: left;
@@ -216,7 +222,7 @@ article {
 	margin: 0 15px 5px 0;
 }
 
-#contact {
+#contact_sidebar {
 	padding: 10px;
 }
 
@@ -255,11 +261,13 @@ aside {
 
 #video_list li {
 	width: 287px;
+	position: relative;
+	padding: 20px 0 5px 8px;
 	margin: 10px auto 0;
 	background: #f3f3f3;
 	box-shadow: 1px 1px 1px #1b2c2b;
-	padding: 20px 0 5px 8px;
-	position: relative;
+	-moz-box-shadow: 1px 1px 1px #1b2c2b;
+	-webkit-box-shadow: 1px 1px 1px #1b2c2b;
 }
 
 #video_list a {
@@ -285,12 +293,19 @@ aside {
 #video_list .now_playing {
 	background: #c6dcde;
 	box-shadow: -1px -1px 1px #1b2c2b;
+	-moz-box-shadow: -1px -1px 1px #1b2c2b;
+	-webkit-box-shadow: -1px -1px 1px #1b2c2b;
 }
 
 #sidebar_ad {
 	width: 300px;
+	height: 257px;
+	background: url('../images/light_alu.jpg');
 	margin: 0 auto;
-	padding: 0 10px 10px;
+	padding: 15px 10px 10px;
+	box-shadow: 1px 1px 2px #404040;
+	-moz-box-shadow: 1px 1px 2px #404040;
+	-webkit-box-shadow: 1px 1px 2px #404040;
 }
 
 /*---------- Home Page Lower Ads & Moon ----------*/
@@ -302,13 +317,13 @@ aside {
 }
 
 #horizontal_ad {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 #moon {
 	float: left;
-	width: 198px;
-	height: 198px;
+	width: 208px;
+	height: 193px;
 	text-align: center;
 	background: #000;
 	padding: 2px;
@@ -385,41 +400,8 @@ label span {
 	color: #727373;
 }
 
-label[for="words"], label[for="email"] {
+label[for="email"] {
 	margin-bottom: 5px;
-}
-
-fieldset[id="subject"], fieldset[id="subject"] div {
-	clear: left;
-}
-
-.professional {
-	margin-top: 5px;
-}
-
-input[type="checkbox"] {
-	margin-right: 10px;
-	float: left;
-	margin-top: -4px;
-}
-
-#subject label {
-	font-size: 0.7em;
-	color: #333;
-	height: 20px;
-	line-height: 20px;
-}
-
-#name label, #user_email label {
-	float: left;
-	width: 70px;
-}
-
-#name input {
-	width: 175px;
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 0;
 }
 
 #user_email {
@@ -433,6 +415,32 @@ input[type="checkbox"] {
 #user_email input {
 	clear: left;
 	width: 283px;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+	float: left;
+	min-height: 0;
+}
+
+fieldset[id="subject"] label{
+	float: left;
+}
+
+#subject label {
+	font-size: 0.7em;
+	color: #333;
+}
+
+fieldset[id="subject"], fieldset[id="subject"] div {
+	clear: left;
+}
+
+#name input {
+	width: 175px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 0;
 }
 
 label[for="feedback"] {
@@ -482,9 +490,9 @@ footer {
 
 #lower_nav ul {
 	overflow: hidden;
+	margin: 0 auto;
 	width: 480px;
 	font-size: 12px;
-	float: left;
 }
 
 #lower_nav li {
@@ -510,13 +518,74 @@ footer {
 
 /*----- Translate -----*/
 
-#translator {
+/*#translator {
 	float: left;
 	width: 170px;
 	margin-left: 310px;
-}
+}*/
 
 .copyright {
 	clear: left;
 	margin-top: 15px;
+}
+
+/* Marks code */
+
+dt,dd {
+	float: left;
+	margin: 0 2px;
+}
+
+dt:before {
+	content: "Q";
+	font-size: 16px;
+	background: #4e6a6d;
+	color: #cccccc;
+	padding: 4px;
+	margin-right: 10px;
+}
+
+/* Old Code */
+
+#faq dl{margin:0px 0px 20px 0px; padding:0px}
+#faq dt,dd{padding:0; margin:0}
+
+#faq .faqs {
+	padding-top:3px;
+}
+#faq .faqs dt {
+	font-weight:bold; 
+	padding: 3px 0 15px 30px; 
+	position:relative; 
+	margin-left: 20px;
+}
+#faq .faqs dt:hover { 
+	cursor:pointer; 
+	color:#ff6600; 
+}
+
+/*#faq .faqs dt {
+	content: "Q";
+	background: #4e6a6d;
+	width: 20px;
+	height: 20px;
+}*/
+
+#faq .faqs dd {
+	padding:0 0 5px 30px; 
+	position:relative;
+	color:#333; 
+	margin:0 0 10px 12px;
+}
+#faq .faqs a:link {
+	color:03F; 
+	text-decoration:underline;
+}
+#faq .faqs a:visited {
+	color:03F; 
+	text-decoration:underline;
+}
+#faq .faqs a:hover {
+	color:#ff6600; 
+	text-decoration:underline;
 }
