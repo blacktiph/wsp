@@ -249,7 +249,7 @@ aside {
 
 #video_list {
 	clear: left;
-	font: bold 14px 'Exo', sans-serif;
+	font: 14px helvetica, arial, sans-serif;
 	margin-bottom: 10px;
 }
 
@@ -264,7 +264,7 @@ aside {
 
 #video_list a {
 	position: absolute;
-	top: 12px;
+	top: 9px;
 	left: 260px;
 	height: 23px;
 	width: 23px;
@@ -298,7 +298,7 @@ aside {
 #lower_third {
 	float: left;
 	width: 728px;
-	margin: 0 20px 10px 0;
+	margin: 10px 20px 10px 0;
 }
 
 #horizontal_ad {
@@ -307,13 +307,13 @@ aside {
 
 #moon {
 	float: left;
-	width: 188px;
+	width: 198px;
 	height: 198px;
 	text-align: center;
 	background: #000;
 	padding: 2px;
 	color: #cccccc;
-	margin-top: 0;
+	margin-top: 10px;
 }
 
 #moon span {
