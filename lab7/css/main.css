@@ -1,0 +1,735 @@
+/*---------- Reset ----------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+/*---------- Link Reset ----------*/
+
+#main_content a:link,
+#main_content a:visited,
+#main_content a:hover,
+#main_content a:active {
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+#main_content a:link,
+#main_content a:visited {
+	border-bottom-color: #526466;
+	color: #526466;
+}
+
+#main_content a:hover {
+	border-bottom-color: #3d9099;
+	color: #3d9099;
+}
+
+#lower_nav a:link,
+#lower_nav a:visited,
+#lower_nav a:hover,
+#lower_nav a:active {
+	text-decoration: none;
+}
+
+#lower_nav a:hover {
+	border-bottom-color: #cccccc;
+	color: #cccccc;
+}
+
+/*---------- Basic Elements ----------*/
+
+h1 {
+	font-size: 22px;
+	text-indent: -99999px;
+	background: url('../images/logo_header.png') no-repeat;
+	height: 128px;
+	float: left;
+	width: 301px;
+}
+
+h2, h3 {
+	text-shadow: 0 1px 1px #FCFCFC;
+	-moz-text-shadow: 0 1px 1px #FCFCFC;
+}
+
+h2 {
+	font: 26px 'Exo', sans-serif;
+	color: #051517;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 3px;
+
+}
+
+h3 {
+	font: 22px 'Exo', sans-serif;
+	margin-bottom: 8px;
+	color: #0e3b40;
+}
+
+h4 {
+	font: 18px 'Exo', sans-serif;
+	margin-bottom: 8px;
+	color: #0e3b40;
+}
+
+em {
+	font-style: italic;
+}
+
+p {
+	margin: 8px 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/*---------- Wrapper ----------*/
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*---------- Header ----------*/
+
+body {
+	font: 62.5%/1.5 helvetica, arial, sans-serif;
+	color: #051517;
+}
+
+header {
+	height: 170px;
+	background: #7ca2a6 url('../images/egg_shell.png');
+	overflow: hidden;
+}
+
+#shark_background {
+	background: url('../images/shark_background.jpg') no-repeat 120px 0;
+	height: 128px;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#tarpon_image {
+	background: url('../images/header_tarpon.png');
+	display: block;
+	height: 128px;
+	width: 260px;
+	margin-left: 700px;
+}
+
+/*---------- Navigation ----------*/
+
+nav {
+	height: 42px;
+	line-height: 42px;
+	background: #051517;
+}
+
+nav ul {
+	overflow: hidden;
+	font-size: 16px;
+}
+
+nav li {
+	float: left;
+}
+
+nav a:link, nav a:visited { /* Needed because of link reset */
+	color: #f2ede9;
+	border: none;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 18px;
+	padding: 21px 12px;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+nav a:hover {
+	background: #526466;
+	color: #f2ede9;
+}
+
+nav a:active {
+	background: #3c4b4d;
+}
+
+#home header a[href="index.html"],
+#about header a[href="about.html"],
+#gallery header a[href="gallery.html"],
+#press header a[href="press.html"],
+#faq header a[href="faq.html"],
+#contact header a[href="contact.html"] {
+	background: #526466;
+	color: #f2ede9;
+}
+
+/*---------- Main Content ----------*/
+
+#main_content {
+	background: url('../images/net.png');
+	border-top: 1px solid #cccccc;
+	font-size: 14px;
+	overflow:hidden;
+}
+
+section {
+	float: left;
+}
+
+section, aside {
+	margin-top: 20px;
+}
+
+article {
+	background: url('../images/light_alu.jpg');
+	margin-bottom: 20px;
+	border-radius: 12px;
+	moz-border-radius: 12px;
+	box-shadow: 1px 1px 2px #404040;
+	-moz-box-shadow: 1px 1px 2px #404040;
+	-webkit-box-shadow: 1px 1px 2px #404040;
+}
+
+#video_player {
+	width: 600px;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+#shark_fishing, #online_classes {
+	width: 300px;
+	text-align: left;
+	float: left;
+	margin-right: 20px;
+}
+
+#generic_page {
+	padding: 0 10px;
+	width: 600px;
+	margin-right: 20px;
+}
+
+#generic_page img, #sidebar img {
+	float: left;
+	margin: 0 15px 5px 0;
+}
+
+#sidebar h4 {
+	float: left;
+}
+
+#sidebar em {
+	width: 150px;
+}
+
+.album {
+	overflow: hidden;
+	border: 2px solid #cccccc;
+	clear: left;
+	margin-bottom: 10px;
+	line-height: 0;
+}
+
+#sidebar .album img {
+	margin-bottom: 0;
+}
+
+#contact_sidebar {
+	padding: 10px;
+}
+
+/*---------- Sidebar ----------*/
+
+aside {
+	float: left;
+	width: 320px;
+}
+
+aside article {
+	padding: 10px;
+}
+
+aside h3:nth-child(n+2) { /* Prevents the 1st header from being further from the top edge */
+	margin-top: 8px;
+}
+
+#faq_resources h2 {
+	font-size: 24px;
+}
+
+#faq_resources h3 {
+	font-size: 18px;
+}
+
+#faq_resources ul {
+	list-style: disc inside;
+	color: #0e3b40;
+	line-height: 2;
+}
+
+#fishing_forums li { /* Removes list-style from fishing forums */
+	list-style: none;
+}
+
+#more_videos h2 {
+	font: bold 18px 'Exo', sans-serif;
+	float: left;
+	width: 150px;
+	margin-bottom: 0;
+	border: none;
+	text-shadow: 0 1px 1px #FCFCFC;
+	-moz-text-shadow: 0 1px 1px #FCFCFC;
+}
+
+.youtube_logo {
+	float: left;
+	margin-left: 66px;
+	margin-bottom: 10px;
+}
+
+#video_list {
+	clear: left;
+	font: 14px helvetica, arial, sans-serif;
+	margin-bottom: 10px;
+}
+
+#video_list li {
+	width: 287px;
+	position: relative;
+	padding: 20px 0 5px 8px;
+	margin: 10px auto 0;
+	background: #f3f3f3;
+	box-shadow: 1px 1px 1px #1a2a2b;
+	-moz-box-shadow: 1px 1px 1px #1a2a2b;
+	-webkit-box-shadow: 1px 1px 1px #1a2a2b;
+}
+
+#video_list a {
+	position: absolute;
+	top: 9px;
+	left: 260px;
+	height: 23px;
+	width: 23px;
+	background: url('../images/play_button.png') no-repeat 0 0;
+	text-indent: -99999px;
+}
+
+/*----- Image Sprite -----*/
+
+#video_list a:hover {
+	background-position: -23px 0;
+}
+
+#video_list a:active {
+	background-position: -46px 0;
+}
+
+#video_list .now_playing {
+	background: #c5dbde;
+	box-shadow: -1px -1px 1px #1a2a2b;
+	-moz-box-shadow: -1px -1px 1px #1a2a2b;
+	-webkit-box-shadow: -1px -1px 1px #1a2a2b;
+}
+
+#sidebar_ad {
+	width: 300px;
+	height: 257px;
+	background: url('../images/light_alu.jpg');
+	margin: 0 auto;
+	padding: 15px 10px 10px;
+	box-shadow: 1px 1px 2px #404040;
+	-moz-box-shadow: 1px 1px 2px #404040;
+	-webkit-box-shadow: 1px 1px 2px #404040;
+}
+
+/*---------- FAQ ----------*/
+
+dl {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+dt, dd {
+	float: left;
+	width: 567px;
+	display: block;
+	margin-left: 33px;
+}
+
+dt:before, dd:before {
+	font: bold 20px courier, monospace;
+	padding: 2px 4px 2px 5px;
+	margin-right: 10px;
+	border-radius: 2px;
+	moz-border-radius: 2px;
+	margin-left: -33px;
+}
+
+dt:before {
+	content: "Q";
+	background: #526466;
+	color: #FBFBFB;
+}
+
+dd:before {
+	content: "A";
+	color: #051517;
+	background: #f2d13f;
+}
+
+dt {
+	color: #051517;
+	font-weight: bold;
+	padding: 3px 0 15px;
+}
+
+dt:hover {
+	color: #526466;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+dd {
+	margin-bottom: 10px;
+	color: #4d4d4d;
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 7px;
+}
+
+/*---------- Image Gallery ----------*/
+
+ul.gallery {
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+	width: 610px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+ul.gallery li {
+	float: left;
+   	margin: 0;
+}
+
+ul.gallery,
+ul.gallery li,
+ul.gallery a,
+ul.gallery img {
+	padding: 0;
+	line-height: 0;
+}
+
+ul.gallery li:hover {
+    cursor: pointer;
+}
+
+ul.gallery img {
+	opacity: 0.5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	border: 3px solid #bfbfbf;
+}
+
+ul.gallery img:hover {
+	opacity: 1.0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	border: 3px solid #526466;
+}
+
+/*---------- In the Media ----------*/
+
+#left_media_column {
+	margin-right: 20px;
+}
+
+.media_column {
+	float: left;
+	width: 290px;
+	margin-bottom: 20px;
+}
+
+.media_column h3,
+.media_column em,
+.media_column img {
+	display: block;
+	clear: left;
+}
+
+.media_column em {
+	margin: 5px 0;
+	max-width: 200px;
+}
+
+.media_column img {
+	border: 1px solid #526466;
+	margin-bottom: 10px;
+}
+
+/*---------- Home Page Lower Ads & Moon ----------*/
+
+#lower_third {
+	float: left;
+	width: 728px;
+	margin: 10px 20px 10px 0;
+}
+
+#lower_third a[title="barrett custom fishing rods"] { /* Needed because of link reset */
+	border: none;
+}
+
+#horizontal_ad {
+	margin-top: 10px;
+}
+
+#moon {
+	float: left;
+	width: 208px;
+	height: 193px;
+	text-align: center;
+	background: #000;
+	padding: 2px;
+	color: #cccccc;
+	margin-top: 10px;
+}
+
+#moon span {
+	font: 25px 'PT Sans Narrow', sans-serif;
+}
+
+#moon span a {
+	font-size: 10px;
+	color: #a0a0a0;
+	margin: 0;
+}
+
+#moon p {
+	font-size: 11px;
+	margin: 0 10px;
+	text-align: left;
+}
+
+/*---------- Form Design ----------*/
+
+form {
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+label, input, textarea {
+	display: block;
+}
+
+input, textarea {
+	margin: 3px 0 10px;
+	background: #e5e5e5;
+	min-height: 25px;
+	color: #4d4d4d;
+	border: none;
+}
+
+textarea {
+	width: 590px;
+	padding: 5px;
+	height: 70px;
+}
+
+input[type="text"] {
+	width: 283px;
+	height: 20px;
+	padding-left: 5px;
+}
+
+#first_name {
+	margin-right: 20px;
+}
+
+#first_name, #last_name {
+	float: left;
+}
+
+#first_name label, #last_name label {
+	margin-top: 5px;
+}
+
+label, legend {
+	font: 14px helvetica, arial, sans-serif;
+}
+
+label span {
+	font-size: 12px;
+	margin-left: 5px;
+	color: #737373;
+}
+
+label[for="email"] {
+	margin-bottom: 5px;
+}
+
+#user_email {
+	margin-bottom: 20px;
+}
+
+#user_email label {
+	clear: left;
+}
+
+#user_email input {
+	clear: left;
+	width: 283px;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+	float: left;
+	min-height: 0;
+}
+
+fieldset[id="subject"] label{
+	float: left;
+}
+
+#subject label {
+	font-size: 0.7em;
+	color: #333333;
+}
+
+fieldset[id="subject"], fieldset[id="subject"] div {
+	clear: left;
+}
+
+#name input {
+	width: 175px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+
+label[for="feedback"] {
+	margin-top: 15px;
+}
+
+div > label {
+	margin-top: 10px;
+}
+
+/*----- CTA Button -----*/
+
+.controls {
+	margin-top: 15px;
+}
+
+input[type="submit"] {
+	width: 100px;
+	padding: 5px 20px;
+	font-weight: bold;
+	font-size: 16px;
+	background: #537073;
+	color: #f5f9fa;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 0;
+}
+
+input[type="submit"]:hover {
+	background: #81aeb3;
+	color: #374a4d;
+	cursor: pointer;
+}
+
+/*---------- Footer ----------*/
+
+footer {
+	clear: left;
+	background: #092124;
+	color: #cccccc;
+	text-align: center;
+	padding: 15px 0 2px 0;
+	border-top: 1px solid #cccccc;
+}
+
+/*----- Navigation -----*/
+
+#lower_nav ul {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 480px;
+	font-size: 12px;
+}
+
+#lower_nav li {
+	float: left;
+	padding-right: 10px;
+	margin-left: 10px;
+	border-right: 1px solid #cccccc;
+}
+
+#lower_nav li:last-child {
+	border: none;
+}
+
+#lower_nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #cccccc;
+}
+
+#lower_nav a:hover {
+	text-decoration: underline;
+}
+
+.copyright {
+	clear: left;
+	margin-top: 15px;
+}
