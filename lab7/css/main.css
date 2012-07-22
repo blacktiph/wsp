@@ -78,37 +78,31 @@ a:hover {
 
 /*---------- Basic Elements ----------*/
 
-h1 {
-	font-size: 22px;
-	text-indent: -99999px;
-	background: url('../images/logo_header.png') no-repeat;
-	height: 128px;
-	float: left;
-	width: 301px;
-}
-
 h2, h3 {
 	text-shadow: 0 1px 1px #FCFCFC;
 	-moz-text-shadow: 0 1px 1px #FCFCFC;
 }
 
+h2, h3, h4 {
+	font-family: 'Exo', sans-serif;
+}
+
 h2 {
-	font: 26px 'Exo', sans-serif;
+	font-size: 1.92857143em; /* 27px / 14px */
 	color: #051517;
 	margin-bottom: 15px;
 	border-bottom: 1px solid #cccccc;
 	padding-bottom: 3px;
-
 }
 
 h3 {
-	font: 22px 'Exo', sans-serif;
+	font-size: 1.57142857em; /* 22px / 14px */
 	margin-bottom: 8px;
 	color: #0e3b40;
 }
 
 h4 {
-	font: 18px 'Exo', sans-serif;
+	font-size: 1.28571429em; /* 18px / 14px */
 	margin-bottom: 8px;
 	color: #0e3b40;
 }
@@ -127,8 +121,9 @@ strong {
 
 /*---------- Wrapper ----------*/
 
-#wrapper {
-	width: 960px;
+.wrapper {
+	max-width: 960px;
+	padding: 0 1.04166667%; /* 10px / 960px */
 	margin: 0 auto;
 }
 
@@ -145,22 +140,29 @@ header {
 	overflow: hidden;
 }
 
-#shark_background {
-	background: url('../images/shark_background.jpg') no-repeat 120px 0;
+h1 {
+	font-size: 2.2em; /* 22px / 10px */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url('../images/logo_header.png') no-repeat;
 	height: 128px;
+	float: left;
+	width: 31.3541667%; /* 301px / 960px */
 }
 
-.wrapper {
-	width: 960px;
-	margin: 0 auto;
+#shark_background {
+	background: url('../images/shark_background.jpg') no-repeat 35% 0; /* 120px / 960px */
+	height: 128px;
 }
 
 #tarpon_image {
 	background: url('../images/header_tarpon.png');
 	display: block;
+	float: left;
 	height: 128px;
-	width: 260px;
-	margin-left: 700px;
+	width: 27.0833333%; /* 260px / 960px */
+	margin-left: 39.4791667%; /* 379px / 960px */
 }
 
 /*---------- Navigation ----------*/
@@ -173,7 +175,6 @@ nav {
 
 nav ul {
 	overflow: hidden;
-	font-size: 16px;
 }
 
 nav li {
@@ -187,7 +188,7 @@ nav a:link, nav a:visited { /* Needed because of link reset */
 
 nav a {
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 1.8em; /* 18px / 10px */
 	padding: 21px 12px;
 	text-transform: uppercase;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -217,21 +218,23 @@ nav a:active {
 #main_content {
 	background: url('../images/net.png');
 	border-top: 1px solid #cccccc;
-	font-size: 14px;
+	font-size: 1.4em; /* 14px / 10px */
 	overflow:hidden;
 }
 
 section {
 	float: left;
+	width: 64.5833333%; /* 620px / 960px */
+	margin-right: 2.08333333%; /* 20px / 960px */
 }
 
 section, aside {
 	margin-top: 20px;
 }
 
-article {
-	background: url('../images/light_alu.jpg');
+#video_player, #sidebar, #more_videos {
 	margin-bottom: 20px;
+	background: url('../images/aluminum_light.jpg');
 	border-radius: 12px;
 	moz-border-radius: 12px;
 	box-shadow: 1px 1px 2px #404040;
@@ -240,90 +243,95 @@ article {
 }
 
 #video_player {
-	width: 600px;
-	padding: 10px;
-	margin-right: 20px;
+	padding: 1.66666667%; /* 10px / 600px */
 }
 
 #shark_fishing, #online_classes {
-	width: 300px;
+	width: 48.3870968%; /* 300px / 620px */
 	text-align: left;
 	float: left;
-	margin-right: 20px;
 }
 
-#generic_page {
-	padding: 0 10px;
-	width: 600px;
-	margin-right: 20px;
+#online_classes {
+	margin-left: 3.22580645%; /* 20px / 620px */
 }
 
 #generic_page img, #sidebar img {
 	float: left;
-	margin: 0 15px 5px 0;
 }
 
-#sidebar h4 {
-	float: left;
+#generic_page img {
+	margin: 0 2.41935484% 5px 0; /* 15px / 620px */
 }
 
-#sidebar em {
-	width: 150px;
-}
-
-.album {
-	overflow: hidden;
-	border: 2px solid #cccccc;
-	clear: left;
-	margin-bottom: 10px;
-	line-height: 0;
-}
-
-#sidebar .album img {
-	margin-bottom: 0;
-}
-
-#contact_sidebar {
-	padding: 10px;
+#sidebar img {
+	margin: 0 4.6875% 5px 0; /* 15px / 320px */
 }
 
 /*---------- Sidebar ----------*/
 
 aside {
 	float: left;
-	width: 320px;
-}
-
-aside article {
-	padding: 10px;
+	width: 33.3333333%; /* 320px / 960px */
 }
 
 aside h3:nth-child(n+2) { /* Prevents the 1st header from being further from the top edge */
 	margin-top: 8px;
 }
 
-#faq_resources h2 {
-	font-size: 24px;
+#sidebar, #more_videos {
+	width: 93.75%; /* 300px / 320px */
+	padding: 3.33333333%; /* 10px / 300px */
 }
 
-#faq_resources h3 {
-	font-size: 18px;
+#sidebar h2 {
+	font-size: 1.5em; /* 21px / 14px */
+	color: #0e3b40;
+	margin-bottom: 10px;
+	line-height: 0;
+	padding: 14px 0 20px;
+	border-color: #cfcfcf;
 }
 
-#faq_resources ul {
+#sidebar h3 {
+	font-size: 1.21428571em; /* 17px / 14px */
+	margin-bottom: 5px;
+	color: #051517;
+	font-family: helvetica, arial, sans-serif;
+}
+
+#sidebar h4 { /* For album headers */
+	margin: 4px 0;
+}
+
+#sidebar ul {
 	list-style: disc inside;
 	color: #0e3b40;
 	line-height: 2;
+	margin-bottom: 10px;
 }
 
 #fishing_forums li { /* Removes list-style from fishing forums */
 	list-style: none;
+	line-height: 1.5;
+	margin-bottom: 10px;
 }
 
+#fishing_forums p { /* Fixes color from ul */
+	color: #051517;
+	margin-top: 5px;
+}
+
+#sidebar .contact_sidebar_image { /* Fixes bottom margin on image */
+	margin-bottom: 15px;
+}
+
+/*----- More Videos -----*/
+
 #more_videos h2 {
-	font: bold 18px 'Exo', sans-serif;
+	font: bold 1.28571429em 'Exo', sans-serif; /* 18px / 14px */
 	float: left;
-	width: 150px;
+	width: 50%; /* 150px / 300px */
 	margin-bottom: 0;
 	border: none;
 	text-shadow: 0 1px 1px #FCFCFC;
@@ -332,60 +340,64 @@ aside h3:nth-child(n+2) { /* Prevents the 1st header from being further from the
 
 .youtube_logo {
 	float: left;
-	margin-left: 66px;
+	margin-left: 22%; /* 66px / 300px */
 	margin-bottom: 10px;
 }
 
-#video_list {
+#more_videos ul{
 	clear: left;
-	font: 14px helvetica, arial, sans-serif;
+	font: 1em helvetica, arial, sans-serif; /* 14px / 14px */
 	margin-bottom: 10px;
 }
 
-#video_list li {
-	width: 287px;
+#more_videos li {
+	width: 95%; /* 285px / 300px */
 	position: relative;
-	padding: 20px 0 5px 8px;
+	padding: 20px 0 5px 3.50877193%; /* 10px / 285px */
 	margin: 10px auto 0;
-	background: #f3f3f3;
+	background: url('../images/aluminum_lighter.jpg');
 	box-shadow: 1px 1px 1px #1a2a2b;
 	-moz-box-shadow: 1px 1px 1px #1a2a2b;
 	-webkit-box-shadow: 1px 1px 1px #1a2a2b;
 }
 
-#video_list a {
+#more_videos ul a {
 	position: absolute;
 	top: 9px;
-	left: 260px;
+	left: 88.3333333%; /* 265px / 300px */
 	height: 23px;
-	width: 23px;
+	width: 7.66666667%; /* 23px / 300px */
 	background: url('../images/play_button.png') no-repeat 0 0;
-	text-indent: -99999px;
+	text-indent: -99999%;
 }
 
-/*----- Image Sprite -----*/
-
-#video_list a:hover {
-	background-position: -23px 0;
+#more_videos a:hover, #more_videos a:active { /* Need for link reset */
+	border: none;
 }
 
-#video_list a:active {
-	background-position: -46px 0;
+#more_videos a:hover {
+	background-position: 50% 0; /* middle of image (-23px) */
 }
 
-#video_list .now_playing {
+#more_videos a:active {
+	background-position: 100% 0; /* last image (-46px) */
+}
+
+#more_videos .now_playing {
 	background: #c5dbde;
 	box-shadow: -1px -1px 1px #1a2a2b;
 	-moz-box-shadow: -1px -1px 1px #1a2a2b;
 	-webkit-box-shadow: -1px -1px 1px #1a2a2b;
 }
 
+/*---------- Sidebar Google Adsense ----------*/
+
 #sidebar_ad {
-	width: 300px;
+	width: 93.75%; /* 300px / 320px */
 	height: 257px;
-	background: url('../images/light_alu.jpg');
+	background: url('../images/aluminum_light.jpg');
 	margin: 0 auto;
-	padding: 15px 10px 10px;
+	padding: 15px 3.33333333% 10px; /* 10px / 300px */
 	box-shadow: 1px 1px 2px #404040;
 	-moz-box-shadow: 1px 1px 2px #404040;
 	-webkit-box-shadow: 1px 1px 2px #404040;
@@ -400,18 +412,18 @@ dl {
 
 dt, dd {
 	float: left;
-	width: 567px;
+	width: 94.6774194%; /* 587 / 620px */
 	display: block;
-	margin-left: 33px;
+	margin-left: 5.32258065%; /* 33px / 620 */
 }
 
 dt:before, dd:before {
-	font: bold 20px courier, monospace;
-	padding: 2px 4px 2px 5px;
-	margin-right: 10px;
+	font: bold 1.42857143em courier, monospace; /* 20px / 14px */
+	padding: 2px 0.681431005% 2px; /* 4px / 587px */
+	margin-right: 1.70357751%; /* 10px / 587px */
 	border-radius: 2px;
 	moz-border-radius: 2px;
-	margin-left: -33px;
+	margin-left: -5.32258065%; /* 33px / 620 */
 }
 
 dt:before {
@@ -451,7 +463,7 @@ ul.gallery {
 	list-style: none;
 	text-align: center;
 	overflow: hidden;
-	width: 610px;
+	width: 96.7741935%; /* 600px / 620px */
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
@@ -459,6 +471,19 @@ ul.gallery {
 ul.gallery li {
 	float: left;
    	margin: 0;
+}
+
+#generic_page .gallery img {
+	margin: 0 9.16666667% 8px 5%; /* 11px / 120px, 6px / 120px */
+}
+
+#generic_page .gallery li:nth-child(5n+1) img { /* Fixes first column */
+	margin-left: 0;
+	/*border-color: lime;*/
+}
+
+#generic_page .gallery li:nth-child(5n+5) img { /* Fixes last column */
+	margin-right: 0;
 }
 
 ul.gallery,
@@ -474,9 +499,9 @@ ul.gallery li:hover {
 }
 
 ul.gallery img {
-	opacity: 0.5;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
-	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	opacity: 0.7;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=70)";
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
 	border: 3px solid #bfbfbf;
 }
 
@@ -487,41 +512,119 @@ ul.gallery img:hover {
 	border: 3px solid #526466;
 }
 
+/*---------- Gallery Sidebar Album ----------*/
+
+.album {
+	overflow: hidden;
+	border: 2px solid #cccccc;
+	clear: left;
+	margin-bottom: 10px;
+	background: url('../images/aluminum_lighter.jpg');
+}
+
+.album:hover {
+	border: 2px solid #526466;
+}
+
+.album div {
+	float: left;
+	width: 40%; /* 120px / 300px */
+}
+
+.album p {
+	margin: 0;
+	font-size: 0.928571429em; /* 13px / 14px */
+}
+
+#sidebar .album img {
+	margin-bottom: 0;
+}
+
+#sidebar .album img:hover {
+	opacity: 0.6;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=60)";
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
 /*---------- In the Media ----------*/
 
-#left_media_column {
-	margin-right: 20px;
+.media_article {
+	overflow: hidden;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #e9e9e9;
 }
 
-.media_column {
+.media_article:last-child { /* Removes bottom border from last article */
+	border: none;
+}
+
+.media_article h3 {
 	float: left;
-	width: 290px;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 
-.media_column h3,
-.media_column em,
-.media_column img {
-	display: block;
+.media_article p, .media_article iframe {
 	clear: left;
+	width: 69.3548387%; /* 430px / 620px */
+	margin-right: 2.09677419%; /* 12px / 620px */
+	float: left;
+	margin-top: 0;
 }
 
-.media_column em {
-	margin: 5px 0;
-	max-width: 200px;
+.published_date {
+	color: #595959;
+	font-size: 0.857142857em; /* 12px / 14px */
 }
 
-.media_column img {
-	border: 1px solid #526466;
-	margin-bottom: 10px;
+.media_article span {
+	font: 2.14285714em "times new roman", georgia, serif; /* 30px / 14px */
+	color: #595959;
+	line-height: 0;
+	top: 8px;
+	position: relative;
+}
+
+.media_article span:first-child { /* For left quotations */
+	margin-right: 1.1627907%; /* 5px / 430px */
+	margin-left: 0;
+}
+
+.media_article span { /* For right quotations */
+	margin-left: 1.1627907%; /* 5px / 430px */
+}
+
+.media_article a {
+	margin-left: 2.3255814%; /* 10px / 430px */
+}
+
+#generic_page .media_article img { /* Needed because of specificity */
+	border: 1px solid #cccccc;
+	margin: 0;
+}
+
+img.left_media_article { /* Makes image on left side of article */
+	clear: left;
+	float: left;
+}
+
+p.left_media_article { /* Makes text appear to the right of image */
+	clear: none;
+	margin-right: 0;
+	margin-left: 2.09677419%; /* 12px / 620px */
+}
+
+p.media_video_text {
+	width: 28.2258065%; /* 175px / 620px */
+	clear: none;
+	margin-right: 0;
 }
 
 /*---------- Home Page Lower Ads & Moon ----------*/
 
 #lower_third {
 	float: left;
-	width: 728px;
-	margin: 10px 20px 10px 0;
+	width: 75.8333333%; /* 728px / 960px */
+	margin: 10px 2.08333333% 10px 0; /* 20px / 960px */
 }
 
 #lower_third a[title="barrett custom fishing rods"] { /* Needed because of link reset */
@@ -534,36 +637,47 @@ ul.gallery img:hover {
 
 #moon {
 	float: left;
-	width: 208px;
+	width: 21.6666667%; /* 208px / 960px */
 	height: 193px;
 	text-align: center;
 	background: #000;
-	padding: 2px;
+	padding: 0.208333333%; /* 2px / 960px */
 	color: #cccccc;
 	margin-top: 10px;
+	margin-right: 0;
 }
 
-#moon span {
-	font: 25px 'PT Sans Narrow', sans-serif;
+#moon h4 {
+	font: 1.78571429em 'PT Sans Narrow', sans-serif; /* 25px / 14px */
+	color: #cccccc;
+	margin-bottom: 0;
 }
 
 #moon span a {
-	font-size: 10px;
+	font-size: 0.714285714em; /* 10px / 14px */
 	color: #a0a0a0;
 	margin: 0;
 }
 
 #moon p {
-	font-size: 11px;
-	margin: 0 10px;
+	font-size: 0.785714286em; /* 11px / 14px */
+	margin: 0 4.80769231%; /* 10px / 208px */
 	text-align: left;
 }
 
 /*---------- Form Design ----------*/
 
 form {
-	font-size: 1.4em;
+	font-size: 1.35714286em; /* 19px / 14px */
 	margin-bottom: 20px;
+}
+
+form div {
+	margin-top: 10px;
+}
+
+#first_name, #last_name { /* Fixes margin-top for div */
+	margin-top: 0;
 }
 
 label, input, textarea {
@@ -579,37 +693,28 @@ input, textarea {
 }
 
 textarea {
-	width: 590px;
-	padding: 5px;
+	width: 95.1612903%; /* 590px / 620px */
+	padding: 5px; /* 5px / 590px */
 	height: 70px;
 }
 
 input[type="text"] {
-	width: 283px;
+	width: 100%; /* 283px / 283px */
 	height: 20px;
 	padding-left: 5px;
 }
 
 #first_name {
-	margin-right: 20px;
+	margin-right: 4.03225806%; /* 25px / 620px */
 }
 
-#first_name, #last_name {
+#first_name, #last_name, #user_email {
 	float: left;
+	width: 45.6451613%; /* 283px / 620px */
 }
 
 #first_name label, #last_name label {
 	margin-top: 5px;
-}
-
-label, legend {
-	font: 14px helvetica, arial, sans-serif;
-}
-
-label span {
-	font-size: 12px;
-	margin-left: 5px;
-	color: #737373;
 }
 
 label[for="email"] {
@@ -617,20 +722,29 @@ label[for="email"] {
 }
 
 #user_email {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
-#user_email label {
+#user_email label, #user_email input {
 	clear: left;
 }
 
-#user_email input {
-	clear: left;
-	width: 283px;
+label, legend {
+	font: 0.736842105em helvetica, arial, sans-serif; /* 14px / 19px */
+}
+
+label .secondary_label {
+	font-size: 0.857142857em; /* 12px / 14px */
+	margin-left: 0.806451613%; /* 5px / 620px */
+	color: #737373;
+}
+
+label span, body[id="contact"] p span { /* Required form fields */
+	color: #d03535;
 }
 
 input[type="checkbox"] {
-	margin-right: 10px;
+	margin-right: 1.61290323%; /* 10px / 620px */
 	float: left;
 	min-height: 0;
 }
@@ -640,40 +754,30 @@ fieldset[id="subject"] label{
 }
 
 #subject label {
-	font-size: 0.7em;
+	font-size: 0.684210526em; /* 13px / 19px */
 	color: #333333;
+	line-height: 1.75em;
 }
 
 fieldset[id="subject"], fieldset[id="subject"] div {
 	clear: left;
 }
 
-#name input {
-	width: 175px;
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 0;
-}
-
 label[for="feedback"] {
 	margin-top: 15px;
 }
 
-div > label {
-	margin-top: 10px;
-}
-
 /*----- CTA Button -----*/
 
-.controls {
+.cta_button {
 	margin-top: 15px;
 }
 
 input[type="submit"] {
-	width: 100px;
-	padding: 5px 20px;
+	width: 16.1290323%; /* 100px/ 620px */
+	padding: 5px 3.22580645%; /* 20px / 620px */
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 0.842105263em; /* 16px / 19px */
 	background: #537073;
 	color: #f5f9fa;
 	-moz-border-radius: 5px;
@@ -695,7 +799,7 @@ footer {
 	background: #092124;
 	color: #cccccc;
 	text-align: center;
-	padding: 15px 0 2px 0;
+	padding: 15px 0 2px;
 	border-top: 1px solid #cccccc;
 }
 
@@ -704,14 +808,14 @@ footer {
 #lower_nav ul {
 	overflow: hidden;
 	margin: 0 auto;
-	width: 480px;
-	font-size: 12px;
+	width: 50%; /* 480px / 960px */
+	font-size: 1.2em; /* 12px / 10px */
 }
 
 #lower_nav li {
 	float: left;
-	padding-right: 10px;
-	margin-left: 10px;
+	padding-right: 2.08333333%; /* 10px / 480px */
+	margin-left: 2.08333333%; /* 10px / 480px */
 	border-right: 1px solid #cccccc;
 }
 
@@ -732,4 +836,14 @@ footer {
 .copyright {
 	clear: left;
 	margin-top: 15px;
+}
+
+/*--------------------------------------------------------------------------------
+	Media Queries
+--------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 960px) {
+	body {
+		max-width: 960px;
+	}
 }
